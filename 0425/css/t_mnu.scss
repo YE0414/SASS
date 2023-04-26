@@ -1,0 +1,48 @@
+$bgColor: lavender;
+$dp: block;
+$nn: none;
+$bs: 1080px;
+$ma: 0 auto;
+.tabmenu {
+  position: relative;
+  width: $bs;
+  padding: 0;
+  margin: $ma;
+  display: flex;
+  list-style: none;
+  li {
+    width: 25%;
+    text-align: center;
+    label {
+      display: inline-block;
+      width: 100%;
+      padding: 10px 0px;
+    }
+    .img {
+      display: $nn;
+      text-align: left;
+      padding: 20px;
+      position: absolute;
+      left: 0;
+      box-sizing: border-box;
+      border: 5px solid #f9f9f9;
+      box-sizing: border-box;
+      img {
+        float: left;
+        padding-right: 20px;
+      }
+      p {
+        text-indent: 15px;
+      }
+    }
+  }
+}
+input {
+  display: $nn;
+}
+input:checked ~ label {
+  background: $bgColor;
+}
+.tabmenu input:checked ~ .img {
+  display: $dp;
+}

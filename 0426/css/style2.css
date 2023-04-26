@@ -1,0 +1,24 @@
+div {
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.box01 {
+  width: 400px;
+  background-color: cornflowerblue;
+}
+
+.box02 {
+  width: 700px;
+  background-color: pink;
+}
+
+.box03 {
+  width: 768px;
+  background: lightpink;
+}
+
+.box04 {
+  width: 1025px;
+  background-color: cadetblue;
+}/*# sourceMappingURL=style2.css.map */

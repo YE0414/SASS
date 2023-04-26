@@ -1,0 +1,81 @@
+@import "style";
+$color: #333;
+$wh40: 50px;
+h2 {
+  font-size: $bigFontSize;
+  color: $baseFontColor;
+  background-color: pink;
+}
+#login {
+  display: flex;
+  gap: 20px;
+  .l_btn {
+    width: 250px;
+    height: $wh40;
+    border: none;
+    font-size: 16px;
+  }
+  .btn1 {
+    background: red;
+    color: #fff;
+  }
+  .btn2 {
+    background: rgb(74 185 45);
+    color: #fff;
+    span {
+      position: absolute;
+      transform: translate(-67px, -12px);
+    }
+    span::before {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 35px;
+      transform: translate(-6px, -6px);
+      background-color: #fff;
+      position: absolute;
+      margin-right: 5px;
+    }
+  }
+}
+.btn3 {
+  background: #ffe800;
+  color: $color;
+  span {
+    position: absolute;
+    transform: translate(-70px, -9px);
+  }
+  span::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 35px;
+    transform: translate(-6px, -9px);
+    background-color: #fff;
+    position: absolute;
+    margin-right: 5px;
+  }
+}
+.btn2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  transform: translate(2px, -19px);
+  background-color: #fff;
+  background-image: url(../images/sns_icon.png);
+  background-position: -387px -88px;
+  background-size: 650px;
+  height: 38px;
+  width: 37px;
+}
+.btn3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  transform: translate(-1px, -28px);
+  background-image: url(../images/sns_icon.png);
+  background-size: 500px;
+  background-position: -125px 161px;
+  height: $wh40;
+  width: $wh40;
+}

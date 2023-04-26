@@ -1,0 +1,35 @@
+.wrap {
+  width: 1180px;
+  margin: 0 auto;
+  border: 3px solid #333;
+}
+.wrap .box01 {
+  background: rgb(236, 38, 38);
+  height: 100px;
+  width: 98.3333333333px;
+}
+.wrap .box02 {
+  background: #137e13;
+  height: 100px;
+  width: 590px;
+}
+.wrap .box03 {
+  background: rgb(40, 40, 184);
+  height: 100px;
+  width: 1081.6666666667px;
+}
+
+.btn {
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  background: #7254e0;
+  color: #fff;
+}
+.btn.btn02 {
+  background-color: #b9aaf0;
+}
+
+.btn03 {
+  opacity: 0.2;
+}/*# sourceMappingURL=style.css.map */

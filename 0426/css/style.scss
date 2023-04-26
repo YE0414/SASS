@@ -1,0 +1,48 @@
+//style.scss
+
+//wrap의 가로크기 변수
+//12컬럼의 그리드
+//박스가 가지는 컬럼수에 따라 가로크기가 지정되는 함수임
+$max-width: 1180px;
+@function columns($number: 1, $all: 12) {
+  @return $max-width * ($number/$all);
+}
+.wrap {
+  width: $max-width;
+  margin: 0 auto;
+  border: 3px solid #333;
+  .box01 {
+    background: rgb(236, 38, 38);
+    height: 100px;
+    width: columns(); // 1/12
+  }
+  .box02 {
+    background: #137e13;
+    height: 100px;
+    width: columns(6, 12); // 6/12
+  }
+  .box03 {
+    background: rgb(40, 40, 184);
+    height: 100px;
+    width: columns(11); // 11/11
+  }
+}
+
+//내장함수로 서식변경하기
+$mainColor: #7254e0;
+.btn {
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  background: $mainColor;
+  color: #fff;
+  &.btn02 {
+    background-color: lighten($mainColor, 20%);
+  }
+}
+@function my-lighten($num) {
+  @return 0.1 * $num;
+}
+.btn03 {
+  opacity: my-lighten(2);
+}

@@ -1,0 +1,16 @@
+@charset "UTF-8";
+body {
+  font-family: "맑은 고딕", arial, sans-serif;
+  font-size: 12px;
+  color: #333;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+#wrap {
+  width: 1280px;
+  background-color: pink;
+  margin: 0px auto;
+}/*# sourceMappingURL=style.css.map */

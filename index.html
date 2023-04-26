@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>SASS</title>
+      <style>
+        *{margin:0px;padding:0px;}
+        body{
+          font-family: "맑은 고딕",arial,sans-serif;
+          font-size:12px;
+          color:#333333;
+          background:rgb(246, 246, 246);
+        }
+        h1, h2{ text-align:center;}
+        h1 img{width:160px;}
+        h2{line-height:40px;}
+
+        /* 테두리 선 */
+        .border01{
+          border-top:3px solid #af2268;
+          border-bottom:3px solid #ca4f97;
+        }
+        /* 제목 배경 */
+        .bgcolor01{background:#ca4f97;}
+        dl{text-indent:10px;}
+        dt{
+          font-size:14px;
+          color:#fff;
+          padding:12px 0px;
+          font-weight: bold;
+          border-bottom:1px solid #ffffff;
+        }
+        dd{ 
+          border-bottom:1px solid #cccccc;
+          text-indent:16px;
+        }
+        dd > a{
+          display:block;
+          font-size:13px;
+          line-height:40px;
+          color:#333333;
+          text-decoration:none;
+        }
+        dd > a:hover{
+          background-color:rgb(245, 220, 238);
+        }
+        footer{
+          background-color:#5f5e5e;
+          color:#ffffff;
+          text-align:center;
+          line-height:50px;
+        }
+        footer > address{font-style:normal;}
+      </style>
+    </head>
+    <body>
+      <header>
+      <h1>SASS</h1>
+      </header>
+
+      <main>
+        <h2>1. sass</h2>
+        <section class="border01">
+          <dl>
+            <dt class="bgcolor01">1. sass 소개와 문법</dt>
+            <dd><a href="./0424_sass/01_sass소개와 문법.html" title="sass 소개와 문법">sass 소개와 문법</a></dd>
+          </dl>
+          <dl>
+            <dt class="bgcolor01">2. 믹싱기법</dt>
+            <dd><a href="./0424_sass/02_sass문법-믹싱기법.html" title="믹싱기법">믹싱기법</a></dd>
+          </dl>
+          <dl>
+            <dt class="bgcolor01">3. 변수개념</dt>
+            <dd><a href="./0425/01_sass_변수개념.html" title="변수개념">변수개념</a></dd>
+          </dl>
+          <dl>
+            <dt class="bgcolor01">4. 중첩규칙</dt>
+            <dd><a href="./0425/02_sass_중첩규칙.html" title="중첩규칙">중첩규칙</a></dd>
+          </dl>
+          <dl>
+            <dt class="bgcolor01">5. import</dt>
+            <dd><a href="./0425/03_sass_import.html" title="import">import</a></dd>
+            <dd><a href="./0425/03_SASS를활용한탭콘텐츠구현.html" title="SASS를활용한탭콘텐츠구현">SASS를활용한탭콘텐츠구현</a></dd>
+          </dl>
+          <dl>
+            <dt class="bgcolor01">6. 함수문법</dt>
+            <dd><a href="./0426/01_sass_함수문법.html" title="함수문법">함수문법</a></dd>
+          </dl>
+          <dl>
+            <dt class="bgcolor01">7. 함수문법(if문)</dt>
+            <dd><a href="./0426/02_sass_함수문법(if문).html" title="함수문법(if문)">함수문법(if문)</a></dd>
+          </dl>
+          <dl>
+            <dt class="bgcolor01">8. 반복문과 배열</dt>
+            <dd><a href="./0426/03_sass_함수문법(반복문과 배열).html" title="반복문과 배열">반복문과 배열</a></dd>
+          </dl>
+          </section>
+        </section>
+      </main>
+
+      <footer>
+        <address>Copyright&copy;2023 sass 학습페이지 allrights reserved.</address>
+      </footer>
+    </body>
+</html>
